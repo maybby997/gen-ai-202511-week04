@@ -1,50 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>Week 04 Demo</title>
-        <meta name="description" content="This is the description to be read by search engine" />
+        <meta name="description" content="Week 04 demo featuring structured data tools and clean Apple-inspired design." />
         <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
         <header class="site-header">
-            <div class="container">
-                <h1>Week 04 Demo</h1>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="formatLeaveData.html">Format Leave Data</a></li>
-                        <li><a href="formatPeopleData.html">Format People Data</a></li>
-                    </ul>
+            <div class="container topbar">
+                <div class="brand" aria-label="Apple inspired home"></div>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <a href="index.html">Home</a>
+                    <a href="formatLeaveData.html">Leave Data</a>
+                    <a href="formatPeopleData.html">People Data</a>
+                    <a href="formatWeekdayData.html">Weekday Data</a>
                 </nav>
+                <div class="nav-tools" aria-label="Utility navigation">
+                    <a href="#">Search</a>
+                    <a href="#">Bag</a>
+                </div>
             </div>
         </header>
 
-        <main class="container">
-            <section>
-                <h2>Welcome to Week 04 demo</h2>
-                <p>
-                    This small demo shows how to fetch JSON files and render them in a
-                    table for a Coding 101 class.
-                </p>
-                <ul class="quick-links">
-                    <li><a class="btn" href="formatLeaveData.html">Format Leave Data</a></li>
-                    <li><a class="btn" href="formatPeopleData.html">Format People Data</a></li>
-                </ul>
+        <main>
+            <section class="hero">
+                <div class="container hero-inner">
+                    <div class="hero-copy">
+                        <p class="eyebrow">Introducing</p>
+                        <h1>Week 04 Demo</h1>
+                        <p class="tagline">A refined, data-first experience built with clean structure and thoughtful interaction.</p>
+                        <div class="cta-row">
+                            <a class="btn btn-primary" href="formatLeaveData.html">Format Leave Data</a>
+                            <a class="btn btn-secondary" href="formatPeopleData.html">Format People Data</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="visual-panel panel-one"></div>
+                        <div class="visual-panel panel-two"></div>
+                        <div class="visual-badge">
+                            <span>Live data</span>
+                            <strong>JSON-ready</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feature-band">
+                <div class="container feature-grid">
+                    <article class="feature-card feature-card-primary">
+                        <p class="card-kicker">Explore</p>
+                        <h2>Leave data</h2>
+                        <p>Transform time-off records into structured views that are easy to scan and act on.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <p class="card-kicker">Review</p>
+                        <h2>People data</h2>
+                        <p>Organize employee details into a clean, readable format for quick comparison.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <p class="card-kicker">Analyze</p>
+                        <h2>Weekday data</h2>
+                        <p>Understand patterns over time with clear, consistent formatting and presentation.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-block">
+                <div class="container callout">
+                    <p class="mini-label">Built for clarity</p>
+                    <h2>Clean interfaces make complex data feel effortless.</h2>
+                    <p>
+                        This prototype combines a restrained visual system with purposeful layout choices,
+                        turning everyday information into a polished product experience.
+                    </p>
+                    <div class="cta-row centered">
+                        <a class="btn btn-primary" href="formatWeekdayData.html">Open weekday view</a>
+                        <a class="btn btn-secondary" href="index.html">Return home</a>
+                    </div>
+                </div>
             </section>
         </main>
 
         <footer class="site-footer">
-            <div class="container">
+            <div class="container footer-inner">
                 <div>
-                    <h3>Copyright © 2025</h3>
-                    <ul class="social">
-                        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                    </ul>
+                    <p class="footer-title">Week 04 Demo</p>
+                    <p class="footer-meta">© 2025</p>
                 </div>
+                <ul class="social" aria-label="Social links">
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a></li>
+                </ul>
             </div>
         </footer>
     </body>
